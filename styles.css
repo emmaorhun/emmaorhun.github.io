@@ -14,7 +14,7 @@ img.logoContainer{
 img.gitHub{
    margin: 0;
    position: absolute;
-   top: 70%;
+   top: 60%;
    left: 48%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
@@ -23,7 +23,7 @@ img.gitHub{
 img.linkedIn{
    margin: 0;
    position: absolute;
-   top: 70%;
+   top: 60%;
    left: 52%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
