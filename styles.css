@@ -5,7 +5,7 @@ body {
 img.logoContainer{
    margin: 0;
    position: absolute;
-   top: 40%;
+   top: 35%;
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
@@ -14,8 +14,8 @@ img.logoContainer{
 img.gitHub{
    margin: 0;
    position: absolute;
-   top: 60%;
-   left: 45%;
+   top: 70%;
+   left: 47%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
 }
@@ -23,8 +23,8 @@ img.gitHub{
 img.linkedIn{
    margin: 0;
    position: absolute;
-   top: 60%;
-   left: 55%;
+   top: 70%;
+   left: 53%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
 }
