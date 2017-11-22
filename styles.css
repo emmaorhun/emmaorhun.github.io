@@ -6,5 +6,7 @@ img.logoContainer{
   display: block;
   margin-top: auto;
   margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
 
 }
