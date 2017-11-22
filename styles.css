@@ -15,7 +15,7 @@ img.gitHub{
    margin: 0;
    position: absolute;
    top: 60%;
-   left: 48%;
+   left: 45%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
 }
@@ -24,7 +24,16 @@ img.linkedIn{
    margin: 0;
    position: absolute;
    top: 60%;
-   left: 52%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
+}
+
+img.shopify{
+   margin: 0;
+   position: absolute;
+   top: 60%;
+   left: 55%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
 }
