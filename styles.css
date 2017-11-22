@@ -4,5 +4,7 @@ body {
 
 img.logoContainer{
   display: block;
+  margin-top: auto;
   margin-left: auto;
+
 }
