@@ -5,7 +5,11 @@ body {
     background-color: black;
 }
 
-img.logoContainer{
+p {
+  font-family: "Comic Sans MS";
+}
+
+.logoContainer{
    margin: 0;
    position: absolute;
    top: 37%;
@@ -14,7 +18,7 @@ img.logoContainer{
    transform: translate(-50%, -50%)
 }
 
-img.gitHub{
+.gitHub{
    margin: 0;
    position: absolute;
    top: 60%;
@@ -23,7 +27,7 @@ img.gitHub{
    transform: translate(-50%, -50%)
 }
 
-img.linkedIn{
+.linkedIn{
    margin: 0;
    position: absolute;
    top: 60%;
@@ -32,7 +36,7 @@ img.linkedIn{
    transform: translate(-50%, -50%)
 }
 
-img.shopify{
+.shopify{
    margin: 0;
    position: absolute;
    top: 60%;
@@ -43,5 +47,65 @@ img.shopify{
 
 #particles-js{
   height: 100%;
-  background: black;
+  background: #000000;
 }
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  -webkit-transition:opacity .5s ease-out;
+  -moz-transition:opacity .5s ease-out;
+  -ms-transition:opacity .5s ease-out;
+  -o-transition:opacity .5s ease-out;
+  transition:opacity .5s ease-out;
+  opacity:0.2;
+}
+
+.fade-in:hover {
+  opacity:1;
+}
+
+.rotate {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.rotate:hover {
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
+
+section {
+  transition: opacity .6s;
+  transition-delay:.2s;
+}
+.loaded section {
+  opacity: 1;
+}	
+
+
+
+
+
+
