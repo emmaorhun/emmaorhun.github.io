@@ -10,12 +10,17 @@
 	<div id = "particles-js"></div>
   <script src = "particles.js"></script>
   <script src = "app.js"></script>
+  <script src="theater.min.js"></script>
 
 
 	<body>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script src = "siteScript.js"></script>
+
     <div class="logoContainer">
-      <img class="rotate" src="Logo.png" alt="logo" width = 250 height = 250>
+      <img class="hvr-grow" src="Logo.png" alt="logo" width = 290 height = width>
     </div>
     
     <div class="icons">
@@ -39,10 +44,77 @@
 
     </div>
 
-    <div class="section" style="color:#424242; background-color:#FFFFFF; text-align:center;
-      padding:50px;">
-      <p>Hey what's up you guys</p>
+    
 
+    <div class="section" style="color:#FFFFFF">
+      
+
+      <div class="flex-container">
+
+      <div class="sticker"></div>
+       
+        <img class="emma" border="0" alt="emma" src ="emma.JPG" width="200" height="200">
+      
+
+        <div class="aboutMe">
+          
+          <div id="vader"></div>
+          <div id="luke"></div>
+          
+          <script src="path/to/theater.min.js"></script>
+          <script>
+            var theater = theaterJS()
+            
+            theater
+              .on('type:start, erase:start', function () {
+                // add a class to actor's dom element when he starts typing/erasing
+                var actor = theater.getCurrentActor()
+                actor.$element.classList.add('is-typing')
+              })
+              .on('type:end, erase:end', function () {
+                // and then remove it when he's done
+                var actor = theater.getCurrentActor()
+                actor.$element.classList.remove('is-typing')
+              })
+            
+            theater
+              .addActor('vader')
+              .addActor('luke')
+              .addActor('yoda', { accuracy: 0.4, speed: 0.6 }, function (displayValue) {
+    console.log('%s said yoda', displayValue)
+  })
+
+              
+            theater
+              .addScene('vader:My name is Emma Orhun.', 400)
+              .addScene('luke:I am a DevDegree intern at Shopify...', 400)
+              .addScene('yoda:and a student at Carleton University', 200, '.', 200, '.', 200, '. ')
+              .addScene('Your father!')
+          </script>
+
+
+        </div>
+
+      </div>
+
+      <script>
+
+      // 1. Create the button
+      var button = document.createElement("button");
+      button.innerHTML = "RESUME";
+
+      // 2. Append somewhere
+      var body = document.getElementsByTagName("body")[0];
+      body.appendChild(button);
+
+      // 3. Add event handler
+      button.addEventListener ("click", function() {
+        alert("did something");
+      });
+
+
+      </script>
+      
     </div>
     
 
