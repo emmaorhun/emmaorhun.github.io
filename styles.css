@@ -196,7 +196,8 @@ img.circle6{
 .flex-container2 {
   
   padding-top: 30px;
-  font-family: "Comic Sans MS";
+  font-family: "myFont2";
+  letter-spacing: 4px;
 
   display: flex;
   justify-content: space-around;
