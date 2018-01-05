@@ -11,7 +11,9 @@ h3{
 }
 
 p {
-  font-family: "Comic Sans MS";
+  font-family: "myFont2";
+  letter-spacing: 4px;
+
 }
 
 .aboutMe{
@@ -35,6 +37,7 @@ p {
   background-image: -webkit-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -webkit-linear-gradient(top, #DA4574 0%, #FF5D0B 100%);
   background-image: -moz-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -moz-linear-gradient(top, #DA4574 0%, #FF5D0B 100%);
   background-image: -o-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -o-linear-gradient(top#DA4574 0%, #FF5D0B 100%);
+
   position: relative;
 }
 
@@ -204,6 +207,13 @@ img.circle6{
   font-family: 'myFont'; /*a name to be used later*/
   src: url('font.otf'); /*URL to font*/
 }
+
+@font-face {
+  font-family: 'myFont2'; /*a name to be used later*/
+  src: url('Simple-light.ttf'); /*URL to font*/
+}
+
+
 
 .actor__content {
   flex-grow: 1;
