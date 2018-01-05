@@ -41,7 +41,6 @@
           <img class="fade-in" border="0" alt="shopify" src="shopifyLogo.png" width="50" height="50">
         </a>
       </div>
-
     </div>
 
     
@@ -49,15 +48,22 @@
     <div class="section" style="color:#FFFFFF">
       
 
-      <div class="flex-container">
+      <div class="flex-container1">
 
       <div class="sticker"></div>
        
         <img class="emma" border="0" alt="emma" src ="emma.JPG" width="200" height="200">
-      
+        <img class="circle1" border="0" alt="circle" src ="circle.png" width="90" height="90">
+        <img class="circle2" border="0" alt="circle" src ="circle.png" width="30" height="30">
+        <img class="circle3" border="0" alt="circle" src ="circle.png" width="20" height="20">
 
         <div class="aboutMe">
-          
+
+          <h3>Hey what's up you guys!</h3>
+          <p>I'm Emma.</p>
+          <p>I'm a first year Computer Science student</p>
+          <p>at Carleton University.</p>
+          <!--
           <div id="vader"></div>
           <div id="luke"></div>
           
@@ -80,42 +86,75 @@
             theater
               .addActor('vader')
               .addActor('luke')
-              .addActor('yoda', { accuracy: 0.4, speed: 0.6 }, function (displayValue) {
-    console.log('%s said yoda', displayValue)
-  })
 
-              
             theater
-              .addScene('vader:My name is Emma Orhun.', 400)
-              .addScene('luke:I am a DevDegree intern at Shopify...', 400)
-              .addScene('yoda:and a student at Carleton University', 200, '.', 200, '.', 200, '. ')
-              .addScene('Your father!')
+              .addScene("vader:Here is my resume.", 400)
+              .addScene('luke:You might wanna check it out.', 400)
           </script>
-
+        -->
 
         </div>
 
       </div>
 
-      <script>
+    <div> <br><br><br> </div>
 
-      // 1. Create the button
-      var button = document.createElement("button");
-      button.innerHTML = "RESUME";
+      <div class="flex-container2">
 
-      // 2. Append somewhere
-      var body = document.getElementsByTagName("body")[0];
-      body.appendChild(button);
+          <div class="aboutMe">
 
-      // 3. Add event handler
-      button.addEventListener ("click", function() {
-        window.open('resume.pdf','_blank');
-      });
+            <div id="vader"></div>
+              <div id="luke"></div>
+                        
+               <script src="path/to/theater.min.js"></script>
+                        <script>
+                          var theater = theaterJS()
+                          
+                          theater
+                            .on('type:start, erase:start', function () {
+                              // add a class to actor's dom element when he starts typing/erasing
+                              var actor = theater.getCurrentActor()
+                              actor.$element.classList.add('is-typing')
+                            })
+                            .on('type:end, erase:end', function () {
+                              // and then remove it when he's done
+                              var actor = theater.getCurrentActor()
+                              actor.$element.classList.remove('is-typing')
+                            })
+                          
+                          theater
+                            .addActor('vader')
+                            .addActor('luke')
+              
+                          theater
+                            .addScene("vader:Here is my resume.", 400)
+                            .addScene('luke:You might wanna check it out.', 400)
+                        </script>
 
+            <script>
+    
+            // 1. Create the button
+            var button = document.createElement("button");
+            button.innerHTML = "RESUME";
+    
+            // 2. Append somewhere
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(button);
+    
+            // 3. Add event handler
+            button.addEventListener ("click", function() {
+              window.open('resume.pdf','_blank');
+            });
+    
+    
+            </script>
+                     
+              
+                      </div>
 
-      </script>
       
-    </div>
+      </div>
+      
     
 
 	</body>

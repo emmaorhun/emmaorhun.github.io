@@ -41,11 +41,36 @@ p {
 
 img.emma{
   position: absolute;
-  top:875px;
-  left:290;
+  top:945px;
+  left:295px;
   border-radius: 50%;
 
 }
+
+img.circle1{
+  position: absolute;
+  top: 1090px;
+  left: 280px;
+  border-radius: 50%;
+
+}
+
+img.circle2{
+  position: absolute;
+  top: 950px;
+  left: 480px;
+  border-radius: 50%;
+
+}
+
+img.circle3{
+  position: absolute;
+  top: 920px;
+  left: 420px;
+  border-radius: 50%;
+
+}
+
 
 .logoContainer{
    margin: 0;
@@ -135,7 +160,6 @@ img.emma{
 }
 
 .section {
-  background:rgba(255,255,255,0.0);
   transition: opacity .6s;
   transition-delay:.2s;
 }
@@ -144,12 +168,21 @@ img.emma{
   opacity: 1;
 }	
 
-.flex-container {
+.flex-container1 {
   
-
   padding-top: 30px;
 
   outline: #FFFF dotted thick;
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.flex-container2 {
+  
+  padding-top: 30px;
+
 
   display: flex;
   justify-content: space-around;
@@ -177,6 +210,8 @@ img.emma{
 
 button {
   /*margin-top: 20px;*/
+  top: 1500px;
+  left: 420px;
   line-height: 60px;
   font-weight: bold;
   padding: 0 40px;
