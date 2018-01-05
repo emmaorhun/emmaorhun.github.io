@@ -35,25 +35,26 @@ p {
   background-image: -webkit-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -webkit-linear-gradient(top, #DA4574 0%, #FF5D0B 100%);
   background-image: -moz-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -moz-linear-gradient(top, #DA4574 0%, #FF5D0B 100%);
   background-image: -o-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -o-linear-gradient(top#DA4574 0%, #FF5D0B 100%);
+  position: relative;
 }
 
 img.emma{
   position: absolute;
-  top:1045px;
-  left:295px;
+  top:100px;
+  left:-150px;
   border-radius: 50%;
 }
 
 img.circle1{
   position: absolute;
-  top: 1090px;
-  left: 280px;
+  top: 230px;
+  left: -180px;
 }
 
 img.circle2{
   position: absolute;
-  top: 950px;
-  left: 480px;
+  top: 60px;
+  left: -50px;
 }
 
 img.circle3{
@@ -79,6 +80,7 @@ img.circle6{
   top: 1155px;
   left: 1035px;
 }
+
 
 
 .logoContainer{
