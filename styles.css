@@ -37,38 +37,47 @@ p {
   background-image: -o-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -o-linear-gradient(top#DA4574 0%, #FF5D0B 100%);
 }
 
-
-
 img.emma{
   position: absolute;
   top:945px;
   left:295px;
   border-radius: 50%;
-
 }
 
 img.circle1{
   position: absolute;
   top: 1090px;
   left: 280px;
-  border-radius: 50%;
-
 }
 
 img.circle2{
   position: absolute;
   top: 950px;
   left: 480px;
-  border-radius: 50%;
-
 }
 
 img.circle3{
   position: absolute;
   top: 920px;
   left: 420px;
-  border-radius: 50%;
+}
 
+img.circle4{
+  position: absolute;
+  top: 1120px;
+  left: 1020px;
+}
+
+img.circle5{
+  position: absolute;
+  top: 1120px;
+  left: 920px;
+}
+
+img.circle6{
+  position: absolute;
+  top: 1155px;
+  left: 1035px;
 }
 
 
@@ -175,14 +184,14 @@ img.circle3{
   outline: #FFFF dotted thick;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
 }
 
 .flex-container2 {
   
   padding-top: 30px;
-
+  font-family: "Comic Sans MS";
 
   display: flex;
   justify-content: space-around;
@@ -210,8 +219,9 @@ img.circle3{
 
 button {
   /*margin-top: 20px;*/
-  top: 1500px;
-  left: 420px;
+  position: absolute;
+  top:1570px;
+  left: 45%;
   line-height: 60px;
   font-weight: bold;
   padding: 0 40px;

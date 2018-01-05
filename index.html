@@ -26,13 +26,13 @@
     <div class="icons">
       <div class="gitHub">
         <a href="http://github.com/emmaorhun">
-          <img class="fade-in" border="0" alt="gitLogo" src="githubLogo.png" width="50" height="50">
+          <img class="fade-in" border="0" alt="gitLogo" src="githubLogo.png" width="60" height="60">
         </a>
       </div>
 
       <div class="linkedIn">
         <a href="https://www.linkedin.com/in/emmaorhun/">
-          <img class="fade-in" border="0" alt="linkedIn" src="linkedInLogo.png" width="50" height="50">
+          <img class="fade-in" border="0" alt="linkedIn" src="linkedInLogo.png" width="48" height="48">
         </a>
       </div>
 
@@ -56,6 +56,9 @@
         <img class="circle1" border="0" alt="circle" src ="circle.png" width="90" height="90">
         <img class="circle2" border="0" alt="circle" src ="circle.png" width="30" height="30">
         <img class="circle3" border="0" alt="circle" src ="circle.png" width="20" height="20">
+        <img class="circle4" border="0" alt="circle" src ="circle.png" width="20" height="20">
+        <img class="circle5" border="0" alt="circle" src ="circle.png" width="110" height="110">
+        <img class="circle6" border="0" alt="circle" src ="circle.png" width="40" height="40">
 
         <div class="aboutMe">
 
@@ -97,7 +100,7 @@
 
       </div>
 
-    <div> <br><br><br> </div>
+    <div>  </div>
 
       <div class="flex-container2">
 
@@ -108,7 +111,10 @@
                         
                <script src="path/to/theater.min.js"></script>
                         <script>
-                          var theater = theaterJS()
+                          var delayInMilliseconds = 11000; //1 second
+
+                          setTimeout(function() {
+                            var theater = theaterJS()
                           
                           theater
                             .on('type:start, erase:start', function () {
@@ -129,6 +135,8 @@
                           theater
                             .addScene("vader:Here is my resume.", 400)
                             .addScene('luke:You might wanna check it out.', 400)
+                         }, delayInMilliseconds);
+                          
                         </script>
 
             <script>
