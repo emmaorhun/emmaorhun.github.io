@@ -1,155 +1,171 @@
 <html>
 
-	<head>
-		<title>emma orhun</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	</head>
+<head>
+    <title>emma orhun</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+</head>
 
 
-	<div id = "particles-js"></div>
-  <script src = "particles.js"></script>
-  <script src = "app.js"></script>
-  <script src="theater.min.js"></script>
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="theater.min.js"></script>
 
 
-	<body>
+<body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-    <script src = "siteScript.js"></script>
+    <script src="siteScript.js"></script>
 
     <div class="logoContainer">
-      <img class="hvr-grow" src="Logo.png" alt="logo" width = 290 height = width>
+        <img class="hvr-grow" src="Logo.png" alt="logo" width=250 height=250>
     </div>
-    
+
     <div class="icons">
-      <div class="gitHub">
-        <a href="http://github.com/emmaorhun">
-          <img class="fade-in" border="0" alt="gitLogo" src="githubLogo.png" width="60" height="60">
-        </a>
-      </div>
+        <div class="gitHub">
+            <a href="http://github.com/emmaorhun">
+              <img class="fade-in" border="0" alt="gitLogo" src="githubLogo.png" width="60" height="60">
+            </a>
+        </div>
 
-      <div class="linkedIn">
-        <a href="https://www.linkedin.com/in/emmaorhun/">
-          <img class="fade-in" border="0" alt="linkedIn" src="linkedInLogo.png" width="48" height="48">
-        </a>
-      </div>
+        <div class="linkedIn">
+            <a href="https://www.linkedin.com/in/emmaorhun/">
+              <img class="fade-in" border="0" alt="linkedIn" src="linkedInLogo.png" width="48" height="48">
+            </a>
+        </div>
 
-      <div class="shopify">
-        <a href="https://www.mydevlife.ca/">
-          <img class="fade-in" border="0" alt="shopify" src="shopifyLogo.png" width="50" height="50">
-        </a>
-      </div>
+        <div class="shopify">
+            <a href="https://www.mydevlife.ca/">
+              <img class="fade-in" border="0" alt="shopify" src="shopifyLogo.png" width="50" height="50">
+            </a>
+        </div>
     </div>
 
-    
+
 
     <div class="section" style="color:#FFFFFF">
-      
 
-      <div class="flex-container1">
-        
-        <div class="aboutMe">
 
-              <div class="circles">
-                
-                  <img class="emma" border="0" alt="emma" src ="emma.JPG" width="200" height="200">
-                  <img class="circle1" border="0" alt="circle" src ="circle.png" width="90" height="90">
-                  <img class="circle2" border="0" alt="circle" src ="circle.png" width="50" height="50">
-                  <img class="circle3" border="0" alt="circle" src ="circle.png" width="20" height="20">
-        
+        <div class="flex-container1">
+
+            <div class="aboutMe">
+
+                <div class="circles">
+
+                    <img class="emma" border="0" alt="emma" src="emma.JPG" width="200" height="200">
+                    <img class="circle1" border="0" alt="circle" src="circle.png" width="90" height="90">
+                    <img class="circle2" border="0" alt="circle" src="circle.png" width="50" height="50">
+                    <img class="circle3" border="0" alt="circle" src="circle.png" width="20" height="20">
+
                 </div>
 
-          <h3>Hey what's up you guys!</h3>
-          <p>I'm Emma.</p>
-          <p>I'm a first year Computer Science student</p>
-          <p>at Carleton University and</p>
-          <p>a DevDegree intern at Shopify!</p>
+                <h3>Hey what's up you guys!</h3>
+                <p>I'm Emma.</p>
+                <p>I'm a first year Computer Science student</p>
+                <p>at Carleton University and</p>
+                <p>a DevDegree intern at Shopify!</p>
+
+                <script>
+                    // 1. Create the button
+                    var button = document.createElement("button");
+                    button.innerHTML = "RESUME";
+
+                    // 2. Append somewhere
+                    var body = document.getElementsByClassName("anothaBox")[0];
+                    body.appendChild(button);
+
+                    // 3. Add event handler
+                    button.addEventListener("click", function() {
+                        window.open('resume.pdf', '_blank');
+                    });
+
+                </script>
 
 
-          <div class="circles2">
-              
-            <img class="circle4" border="0" alt="circle" src ="circle.png" width="20" height="20">
-            <img class="circle5" border="0" alt="circle" src ="circle.png" width="120" height="120">
-            <img class="circle6" border="0" alt="circle" src ="circle.png" width="50" height="50">
-              
-           </div>
+                <div class="circles2">
+
+                    <img class="circle4" border="0" alt="circle" src="circle.png" width="20" height="20">
+                    <img class="circle5" border="0" alt="circle" src="circle.png" width="120" height="120">
+                    <img class="circle6" border="0" alt="circle" src="circle.png" width="50" height="50">
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+
+        <div class="flex-container2">
+
+            <div class="aboutMe anothaBox">
+
+                <div id="vader"></div>
+                <div id="luke"></div>
+
+                <script src="path/to/theater.min.js"></script>
+                <script>
+                    var delayInMilliseconds = 11000; //1 second
+                    setTimeout(function() {
+                        var theater = theaterJS()
+
+                        theater
+                            .on('type:start, erase:start', function() {
+                                // add a class to actor's dom element when he starts typing/erasing
+                                var actor = theater.getCurrentActor()
+                                actor.$element.classList.add('is-typing')
+                            })
+                            .on('type:end, erase:end', function() {
+                                // and then remove it when he's done
+                                var actor = theater.getCurrentActor()
+                                actor.$element.classList.remove('is-typing')
+                            })
+
+                        theater
+                            .addActor('vader')
+                            .addActor('luke')
+
+                        theater
+                            .addScene("vader:Here is my resume.", 400)
+                            .addScene('luke:You might wanna check it out.', 400)
+                    }, delayInMilliseconds);
+
+                </script>
+
+                <script>
+                    // 1. Create the button
+                    var button = document.createElement("button");
+                    button.innerHTML = "RESUME";
+
+                    // 2. Append somewhere
+                    var body = document.getElementsByClassName("anothaBox")[0];
+                    body.appendChild(button);
+
+                    // 3. Add event handler
+                    button.addEventListener("click", function() {
+                        window.open('resume.pdf', '_blank');
+                    });
+
+                </script>
+                
+            
+
+
+
+
+            </div>
+
+
 
         </div>
 
-      </div>
 
-    
 
-      <div class="flex-container2">
-
-          <div class="aboutMe anothaBox">
-
-            <div id="vader"></div>
-              <div id="luke"></div>
-                        
-               <script src="path/to/theater.min.js"></script>
-                        <script>
-                          var delayInMilliseconds = 11000; //1 second
-
-                          setTimeout(function() {
-                            var theater = theaterJS()
-                          
-                          theater
-                            .on('type:start, erase:start', function () {
-                              // add a class to actor's dom element when he starts typing/erasing
-                              var actor = theater.getCurrentActor()
-                              actor.$element.classList.add('is-typing')
-                            })
-                            .on('type:end, erase:end', function () {
-                              // and then remove it when he's done
-                              var actor = theater.getCurrentActor()
-                              actor.$element.classList.remove('is-typing')
-                            })
-                          
-                          theater
-                            .addActor('vader')
-                            .addActor('luke')
-              
-                          theater
-                            .addScene("vader:Here is my resume.", 400)
-                            .addScene('luke:You might wanna check it out.', 400)
-                         }, delayInMilliseconds);
-                          
-                        </script>
-
-            <script>
-
-                 // 1. Create the button
-            var button = document.createElement("button");
-            button.innerHTML = "RESUME";
-    
-            // 2. Append somewhere
-            var body = document.getElementsByClassName("anothaBox")[0];
-            body.appendChild(button);
-    
-            // 3. Add event handler
-            button.addEventListener ("click", function() {
-              window.open('resume.pdf','_blank');
-            });
-    
-    
-         
-    
-            </script>
-
-            
-                     
-              
-          </div>
-
-      
-      </div>
-      
-    
-
-	</body>
+</body>
 
 
 </html>

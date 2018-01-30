@@ -1,155 +1,92 @@
 <html>
 
-	<head>
-		<title>emma orhun</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	</head>
+<head>
+    <title>emma orhun</title>
+    <script src="https://use.fontawesome.com/3b0fc01ca3.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" type= "text/css" href="css/font-awesome.css">
+    <meta charset="utf-8">
+    
+    
 
 
-	<div id = "particles-js"></div>
-  <script src = "particles.js"></script>
-  <script src = "app.js"></script>
-  <script src="theater.min.js"></script>
+</head>
 
 
-	<body>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-
-    <script src = "siteScript.js"></script>
-
-    <div class="logoContainer">
-      <img class="hvr-grow" src="Logo.png" alt="logo" width = 290 height = width>
-    </div>
-
-    <div class="icons">
-      <div class="gitHub">
-        <a href="http://github.com/emmaorhun">
-          <img class="fade-in" border="0" alt="gitLogo" src="githubLogo.png" width="60" height="60">
-        </a>
-      </div>
-
-      <div class="linkedIn">
-        <a href="https://www.linkedin.com/in/emmaorhun/">
-          <img class="fade-in" border="0" alt="linkedIn" src="linkedInLogo.png" width="48" height="48">
-        </a>
-      </div>
-
-      <div class="shopify">
-        <a href="https://www.mydevlife.ca/">
-          <img class="fade-in" border="0" alt="shopify" src="shopifyLogo.png" width="50" height="50">
-        </a>
-      </div>
-    </div>
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="theater.min.js"></script>
 
 
 
-    <div class="section" style="color:#FFFFFF">
+<body>
+    <!-- MAIN (Center website) -->
+    <div class="main">
 
 
-      <div class="flex-container1">
+        <h1>what i've done.</h1>
+        <hr>
+        <h3>i triple dog dare you to check out my work.</h3>
 
-        <div class="aboutMe">
-
-              <div class="circles">
-
-                  <img class="emma" border="0" alt="emma" src ="emma.JPG" width="200" height="200">
-                  <img class="circle1" border="0" alt="circle" src ="circle.png" width="90" height="90">
-                  <img class="circle2" border="0" alt="circle" src ="circle.png" width="50" height="50">
-                  <img class="circle3" border="0" alt="circle" src ="circle.png" width="20" height="20">
-
+        <!-- Portfolio Gallery Grid -->
+         <div class="content">
+            <img src="gameplay.gif" alt="Bear" style="width:100%">
+            <h2>termina</h2>
+            <p>here's a game i made the art for. </p>
+             <p>i made it at <a href= "https://globalgamejam.org/"> this</a> event</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="brickBreaker.png" alt="Mountains" style="width:100%">
+                    <h2>arkanoid's biggest competitor</h2>
+                    <p>i made my own version of the game breakout</p><br>
                 </div>
-
-          <h3>Hey what's up you guys!</h3>
-          <p>I'm Emma.</p>
-          <p>I'm a first year Computer Science student</p>
-          <p>at Carleton University and</p>
-          <p>a DevDegree intern at Shopify!</p>
-
-
-          <div class="circles2">
-
-            <img class="circle4" border="0" alt="circle" src ="circle.png" width="20" height="20">
-            <img class="circle5" border="0" alt="circle" src ="circle.png" width="120" height="120">
-            <img class="circle6" border="0" alt="circle" src ="circle.png" width="50" height="50">
-
-           </div>
-
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="dataVisualizatoin.png" alt="Lights" style="width:100%">
+                    <h2>data visualization</h2>
+                    <p>i not only enjoy data itself,
+                    but i can visualize it as well</p><br>
+    
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="prioritease.png" alt="Nature" style="width:100%">
+                    <h2>priorit-ease</h2>
+                    <p>my first compsci project<br>
+                        was called priorit-EASE<br>
+                        and the point was to help the user<br>
+                        prioritize with ease</p>
+                    <p><br><br><br><br></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="silhouettes.jpg" alt="Mountains" style="width:100%">
+                    <h2>graphic design</h2>
+                    <p>i take graphic design so<br>seriously 
+                    that i led my yearbook team to <br>
+                    create the best yearbook<br>
+                    in north america<br>
+                    </p>
+                      <br><br><br>  <br><br><br><br><br><br>
+                </div>
+            </div>
         </div>
 
-      </div>
+       
 
-
-
-      <div class="flex-container2">
-
-          <div class="aboutMe anothaBox">
-
-            <div id="vader"></div>
-              <div id="luke"></div>
-
-               <script src="path/to/theater.min.js"></script>
-                        <script>
-                          var delayInMilliseconds = 11000; //1 second
-
-                          setTimeout(function() {
-                            var theater = theaterJS()
-
-                          theater
-                            .on('type:start, erase:start', function () {
-                              // add a class to actor's dom element when he starts typing/erasing
-                              var actor = theater.getCurrentActor()
-                              actor.$element.classList.add('is-typing')
-                            })
-                            .on('type:end, erase:end', function () {
-                              // and then remove it when he's done
-                              var actor = theater.getCurrentActor()
-                              actor.$element.classList.remove('is-typing')
-                            })
-
-                          theater
-                            .addActor('vader')
-                            .addActor('luke')
-
-                          theater
-                            .addScene("vader:Here is my resume.", 400)
-                            .addScene('luke:You might wanna check it out.', 400)
-                         }, delayInMilliseconds);
-
-                        </script>
-
-            <script>
-
-                 // 1. Create the button
-            var button = document.createElement("button");
-            button.innerHTML = "RESUME";
-
-            // 2. Append somewhere
-            var body = document.getElementsByClassName("anothaBox")[0];
-            body.appendChild(button);
-
-            // 3. Add event handler
-            button.addEventListener ("click", function() {
-              window.open('resume.pdf','_blank');
-            });
+        <!-- END MAIN -->
+    </div>
 
 
 
 
-            </script>
-
-
-
-
-          </div>
-
-
-      </div>
-
-
-
-	</body>
+</body>
 
 
 </html>
