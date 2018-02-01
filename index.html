@@ -10,7 +10,6 @@
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
-<script src="theater.min.js"></script>
 
 
 <body>
@@ -20,7 +19,7 @@
     <script src="siteScript.js"></script>
 
     <div class="logoContainer">
-        <img class="hvr-grow" src="Logo.png" alt="logo" width=250 height=250>
+        <img class="hvr-grow" src="Logo.png" alt="logo" width=300 height=300>
     </div>
 
     <div class="icons">
@@ -103,52 +102,41 @@
         <div class="flex-container2">
 
             <div class="aboutMe anothaBox">
+                
+                <p>Hey.<br>
+                You might want to check out<br>
+                what those two buttons lead to...<br>
+                I heard it's pretty impressive content.<br>
+                But don't take my word
+                </p>
 
-                <div id="vader"></div>
-                <div id="luke"></div>
-
-                <script src="path/to/theater.min.js"></script>
-                <script>
-                    var delayInMilliseconds = 11000; //1 second
-                    setTimeout(function() {
-                        var theater = theaterJS()
-
-                        theater
-                            .on('type:start, erase:start', function() {
-                                // add a class to actor's dom element when he starts typing/erasing
-                                var actor = theater.getCurrentActor()
-                                actor.$element.classList.add('is-typing')
-                            })
-                            .on('type:end, erase:end', function() {
-                                // and then remove it when he's done
-                                var actor = theater.getCurrentActor()
-                                actor.$element.classList.remove('is-typing')
-                            })
-
-                        theater
-                            .addActor('vader')
-                            .addActor('luke')
-
-                        theater
-                            .addScene("vader:Here is my resume.", 400)
-                            .addScene('luke:You might wanna check it out.', 400)
-                    }, delayInMilliseconds);
-
-                </script>
 
                 <script>
-                    // 1. Create the button
-                    var button = document.createElement("button");
-                    button.innerHTML = "RESUME";
+                    
+                    var button1 = document.createElement("button1");
+                    button1.innerHTML = "RESUME";
 
-                    // 2. Append somewhere
                     var body = document.getElementsByClassName("anothaBox")[0];
-                    body.appendChild(button);
+                    body.appendChild(button1);
 
-                    // 3. Add event handler
-                    button.addEventListener("click", function() {
+                 
+                    button1.addEventListener("click", function() {
                         window.open('resume.pdf', '_blank');
                     });
+                    
+                    
+                    var button2 = document.createElement("button2");
+                    button2.innerHTML = "PORTFOLIO";
+
+                    var body = document.getElementsByClassName("anothaBox")[0];
+                    body.appendChild(button2);
+
+                 
+                    button2.addEventListener("click", function() {
+                        window.open('portfolio.html', '_blank');
+                    });
+                    
+    
 
                 </script>
                 
