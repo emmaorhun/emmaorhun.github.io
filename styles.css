@@ -16,14 +16,17 @@ p {
   color: white;    
 }
 
+
+
 .aboutMe{
+  background: black;
 
   text-align: center;
   vertical-align: middle;
 
   margin: 70px auto;
   padding: 50px;
-  border-top: 3px solid #DA4574;
+  border-top: 3px solid #FF5D0B;
   border-bottom: 3px solid #FF5D0B;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -39,6 +42,7 @@ p {
   background-image: -o-linear-gradient(top, #DA4574 0%, #FF5D0B 100%), -o-linear-gradient(top#DA4574 0%, #FF5D0B 100%);
 
   position: relative;
+
 }
 
 img.emma{
@@ -87,39 +91,51 @@ img.circle6{
 
 
 .logoContainer{
-   margin: 0;
-   position: absolute;
-   top: 35%;
-   left: 50%;
-   margin-right: -50%;
-   transform: translate(-50%, -50%)
+   top: 25%;
+    z-index: 90;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    
+    height: 100%;
+}
+
+.logoContainer > img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
 }
 
 .gitHub{
    margin: 0;
    position: absolute;
-   top: 60%;
+   top: 70%;
    left: 55%;
    margin-right: -50%;
-   transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%);
+   z-index: 900;
 }
 
 .linkedIn{
    margin: 0;
    position: absolute;
-   top: 60%;
+   top: 70%;
    left: 50%;
    margin-right: -50%;
-   transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%);
+   z-index: 900;
+       
 }
 
 .shopify{
    margin: 0;
    position: absolute;
-   top: 60%;
+   top: 70%;
    left: 45%;
    margin-right: -50%;
-   transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%);
+   z-index: 900;    
+       
 }
 
 #particles-js{
@@ -169,6 +185,17 @@ img.circle6{
   transform:rotate(360deg);
 }
 
+#particles-js {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: -10;
+}
+
+
 .section {
   transition: opacity .6s;
   transition-delay:.2s;
@@ -182,7 +209,6 @@ img.circle6{
   
   padding-top: 30px;
 
-  outline: #FFFF dotted thick;
 
   display: flex;
   justify-content: center;

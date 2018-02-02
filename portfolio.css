@@ -12,19 +12,39 @@ body {
 }
 
 p{
-    font-family: "marker";
+    font-family: "myFont2";
     color: black;
+    width:100%;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+   
 }
 
 h2 {
-    font-family: "marker";
+    font-family: "myFont";
     color:black;
+     letter-spacing: 4px;
+}
+
+h2:hover {
+    opacity: 0.7;
+    /*
+  background: -webkit-linear-gradient(#DA4574, #FF5D0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    */
 }
 
 /* Center website */
 .main {
     max-width: 1000px;
     margin: auto;
+    
+    z-index: 999;
+    
+    padding-top: 30%;
+    padding-bottom: 25%;
 }
 
 hr {
@@ -34,6 +54,16 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0; 
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: -10;
 }
 
 
@@ -99,9 +129,16 @@ a:hover, a:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+
+
 @font-face {
-  font-family: 'marker'; /*a name to be used later*/
-  src: url('PermanentMarker.ttf'); /*URL to font*/
+  font-family: 'myFont'; /*a name to be used later*/
+  src: url('font.otf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'myFont2'; /*a name to be used later*/
+  src: url('Simple-light.ttf'); /*URL to font*/
 }
 
 @media (max-width: 900px) {

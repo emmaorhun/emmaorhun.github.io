@@ -7,20 +7,12 @@
 </head>
 
 
-<div id="particles-js"></div>
-<script src="particles.js"></script>
-<script src="app.js"></script>
+
+
 
 
 <body>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-
-    <script src="siteScript.js"></script>
-
-    <div class="logoContainer">
-        <img class="hvr-grow" src="Logo.png" alt="logo" width=300 height=300>
-    </div>
+    <div id="particles-js"></div>
 
     <div class="icons">
         <div class="gitHub">
@@ -41,6 +33,12 @@
             </a>
         </div>
     </div>
+
+    <div class="logoContainer">
+        <img class="hvr-grow" src="Logo.png" alt="logo">
+    </div>
+
+
 
 
 
@@ -79,7 +77,6 @@
                     button.addEventListener("click", function() {
                         window.open('resume.pdf', '_blank');
                     });
-
                 </script>
 
 
@@ -94,62 +91,56 @@
             </div>
 
         </div>
-        
+
     </div>
 
 
 
-        <div class="flex-container2">
+    <div class="flex-container2">
 
-            <div class="aboutMe anothaBox">
-                
-                <p>Hey.<br>
-                You might want to check out<br>
-                what those two buttons lead to...<br>
-                I heard it's pretty impressive content.<br>
-                But don't take my word
-                </p>
+        <div class="aboutMe anothaBox">
+
+            <p>Hey.<br> You might want to check out<br> what those two buttons lead to...<br> I heard it's pretty impressive content.<br> But you should see for yourself
+            </p>
 
 
-                <script>
-                    
-                    var button1 = document.createElement("button1");
-                    button1.innerHTML = "RESUME";
+            <script>
+                var button1 = document.createElement("button1");
+                button1.innerHTML = "RESUME";
 
-                    var body = document.getElementsByClassName("anothaBox")[0];
-                    body.appendChild(button1);
+                var body = document.getElementsByClassName("anothaBox")[0];
+                body.appendChild(button1);
 
-                 
-                    button1.addEventListener("click", function() {
-                        window.open('resume.pdf', '_blank');
-                    });
-                    
-                    
-                    var button2 = document.createElement("button2");
-                    button2.innerHTML = "PORTFOLIO";
 
-                    var body = document.getElementsByClassName("anothaBox")[0];
-                    body.appendChild(button2);
+                button1.addEventListener("click", function() {
+                    window.open('resume.pdf', '_blank');
+                });
 
-                 
-                    button2.addEventListener("click", function() {
-                        window.open('portfolio.html', '_blank');
-                    });
-                    
-    
 
-                </script>
-                
-            
+                var button2 = document.createElement("button2");
+                button2.innerHTML = "PORTFOLIO";
+
+                var body = document.getElementsByClassName("anothaBox")[0];
+                body.appendChild(button2);
+
+
+                button2.addEventListener("click", function() {
+                    window.open('portfolio.html', '_self');
+                });
+            </script>
 
 
 
-
-            </div>
 
 
 
         </div>
+
+
+
+    </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 
 
 
