@@ -1,0 +1,32 @@
+@font-face {
+   font-family: Jaapokki; 
+   src: url('../fonts/Jaapokki-Regular.otf');
+} 
+
+body {
+    background-color: #ffca28;
+    color: white;
+    font-family: "Jaapokki";
+}
+
+.intro {
+    display: flex;
+}
+
+.text {
+    flex: 1;
+
+}
+
+.header {
+    font-size: 200;
+}
+
+.body-text {
+    font-size: 50;
+}
+
+
+.doodles {
+    flex: 1;
+}
