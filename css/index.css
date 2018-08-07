@@ -4,29 +4,93 @@
 } 
 
 body {
-    background-color: #ffca28;
-    color: white;
+    color: black;
     font-family: "Jaapokki";
 }
 
-.intro {
+.split {
     display: flex;
+    height: 100%;
 }
 
-.text {
-    flex: 1;
-
+.left {
+    padding: 10%;
+    width: 28%;
 }
+
+.right {
+    width:50%;
+}
+
 
 .header {
-    font-size: 200;
+    font-size: 140;
+    line-height: 0;
 }
 
 .body-text {
-    font-size: 50;
+    font-size: 20;
 }
 
-
-.doodles {
-    flex: 1;
+.dot{
+    position:absolute;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 2;
 }
+
+.dot#one{
+    height: 100px;
+    width: 100px;
+    margin-left: 4%;
+    margin-top: 5%;
+    background-color: #0097a7;
+}
+
+.dot#two{
+    height: 50px;
+    width: 50px;
+    margin-left: 13%;
+    margin-top: 8%;
+    background-color: #ffd600; 
+}
+
+.dot#three{
+    height: 30px;
+    width: 30px;
+    margin-left: 8%;
+    margin-top: 14%;
+    background-color: #d50000; 
+}
+
+.dot#four{
+    height: 100px;
+    width: 100px;
+    margin-left: 80%;
+    margin-top:40%;
+    background-color: #0097a7; 
+}
+
+.text {
+    position:absolute;
+    width:40%;
+    z-index: 1;
+}
+
+#portrait {
+    position: absolute;
+    width: 320;
+    margin-top: 15%;
+    margin-left: 12%;
+    border-radius: 50%;
+    z-index: 2;
+    border: 10px solid white;
+}
+
+#cubes {
+    position: absolute;
+    margin-top: 3%;
+    z-index:1;
+    width: 45%;
+}
+
