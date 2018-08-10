@@ -22,7 +22,6 @@ body {
     width:50%;
 }
 
-
 .header {
     font-size: 140;
     line-height: 0;
@@ -94,7 +93,33 @@ body {
 }
 
 
-#content {
-    height: 100%;
-    background-color: aquamarine;
+.icon {
+    position: fixed;
+    width: 70px;
+    margin: 10px;
 }
+
+.icon#linkedin:active{
+    width:65px;
+    content:url("../images/linkedin_pressed.svg");
+}
+
+.icon#github{
+    margin-left:120px;
+}
+
+.icon#github:active{
+    width:65px;
+    content:url("../images/github_pressed.svg");
+}
+
+.icon#shopify{
+    margin-left:230px;
+}
+
+.icon#shopify:active{
+    width:65px;
+    content:url("../images/shopify_pressed.svg");
+}
+
+
