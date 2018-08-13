@@ -92,9 +92,14 @@ body {
     width: 45%;
 }
 
+.buttons {
+    margin-top: 120px;
+}
+
 
 .icon {
-    position: fixed;
+        position: absolute;
+    bottom: 0;
     width: 70px;
     margin: 10px;
 }
